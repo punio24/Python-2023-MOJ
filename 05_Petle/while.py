@@ -48,3 +48,14 @@ while n > 0:
 else:
     print('Koniec')
 
+#ZADANIE
+i=0
+while i<100:
+    i+=1
+    if i % 2 == 0 and (i % 10 + i // 10) % 7 == 0:
+        print(i)
+        continue
+else:
+    print('Koniec')
+
+
