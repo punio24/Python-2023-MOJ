@@ -42,3 +42,14 @@ for i in range (wysokosc):
     szerokosc += 2
 print (f'{"*":^{wysokosc*2}}')
 print (f'{"***":^{wysokosc*2}}')
+
+#### drugi sposob na choinke
+level = int(input("Poziomy:").strip())
+S = ' '
+G = '*'
+for i in range(level):
+    poziom = S * (level-i-1) + (2 * i + 1) * G
+    print(poziom)
+for i in range(2):
+    poziom = S * (level-i-1) + (2 * i + 1) * G
+    print(poziom)
