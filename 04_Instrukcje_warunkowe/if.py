@@ -45,7 +45,7 @@ if (suma_cyfr % 7 == 0) and (i % 2 == 0):
 else:
     print(f'Zła liczba')
 
-    ## typ danych
+    ## typ danych - nowa zmiana
 
 
 
