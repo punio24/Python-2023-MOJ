@@ -12,9 +12,9 @@ s['a']
 s['c']  # Błąd
 s.get('a')
 s.get('c', 0)
-s['c'] = 3
+s['c'] = 3  # dodanie do slownika pozycji c o wartosci 3
 s
-del s['b']
+del s['b'] # usuniecie pozycji b ze slownika
 s
 
 s = {"a": 1, 'b': 2, 'c': 3}
@@ -58,3 +58,20 @@ s
 'a' in s
 
 s = {1: "a", 2: 'b', "ala": [3, 4]}
+
+# ZADANIE
+l = []
+d = {}
+while True:
+    napis = input("Podaj napis, a dodam go do listy: ").strip()
+    if napis == "":
+        break
+    l.append(napis)
+#l = ['Ala', 'ma', 'kota', 'kota']
+for i in l:
+    if d.get(i, 0) == 0:
+        d[i]=1
+    else:
+        print (i)
+        d[i] += 1
+print(f"Tak się sprawy mają: {d}")
