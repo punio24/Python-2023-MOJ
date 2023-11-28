@@ -75,3 +75,37 @@ for i in l:
         print (i)
         d[i] += 1
 print(f"Tak się sprawy mają: {d}")
+
+#ZADANIE 2
+def liczba_slownie(liczba):
+    jednosci = ["", "jeden", "dwa", "trzy", "cztery", "pięć", "sześć", "siedem", "osiem", "dziewięć"]
+    nastki = ["", "jedenaście", "dwanaście", "trzynaście", "czternaście", "piętnaście", "szesnaście", "siedemnaście",
+              "osiemnaście", "dziewiętnaście"]
+    dziesiatki = ["", "dziesięć", "dwadzieścia", "trzydzieści", "czterdzieści", "pięćdziesiąt", "sześćdziesiąt",
+                  "siedemdziesiąt", "osiemdziesiąt", "dziewięćdziesiąt"]
+    setki = ["", "sto", "dwieście", "trzysta", "czterysta", "pięćset", "sześćset", "siedemset", "osiemset",
+             "dziewięćset"]
+
+    jednostka = jednosci[liczba % 10]
+    dziesiatka = dziesiatki[(liczba // 10) % 10]
+    nastka = nastki[liczba % 100] if 10 < liczba % 100 < 20 else ""
+    setka = setki[(liczba // 100) % 10]
+
+    wynik = f"{setka} {dziesiatka} {nastka} {jednostka}".strip()
+    return wynik.capitalize()
+
+while True:
+    liczba = int(input("Podaj liczbę (1-999): "))
+    if 1 <= liczba <= 999:
+        break
+
+postac_slowna = liczba_slownie(liczba)
+print(f"{liczba} - {postac_slowna}")
+
+
+#zmienne:
+jednostka = jednosci[liczba % 10]
+    dziesiatka = dziesiatki[(liczba // 10) % 10]
+    nastka = nastki[liczba % 100] if 10 < liczba % 100 < 20 else ""
+    setka = setki[(liczba // 100) % 10]
+
