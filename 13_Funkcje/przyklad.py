@@ -7,6 +7,7 @@ dodaj_2(5)
 n = dodaj_2(5)
 print(n)
 
+            # kazda funkcja zwraca tylko jedna wartosc, ale jesi podstawimy krotke, to bedzie ich wiecej
 
 def is_odd(x):
     print("*" * x)
@@ -71,3 +72,41 @@ def choinka(poziom, separator=" ", znak="*"):
 
 choinka(5)
 choinka(znak='#', poziom=6)
+
+
+# ZADANIE 1
+def funkcja1(x):
+    suma = 1 +1
+    return suma
+
+def funkcja2(x):
+    roznica = 4 - 3
+    return roznica
+
+slownik = { 'first': funkcja1, 'second': funkcja2 }
+
+klucz = input("Podaj klucz")
+
+funkcja = slownik[klucz]
+print(funkcja(2))
+# ZADANIE 2
+
+ord('A')
+ord('A')+1
+chr(ord('A')+1)
+chr(ord('A')+2)
+
+
+def alphabet_range(end="Z", step=1, start="A"):
+    return (chr(x) for x in range(ord(start), ord(end), step))      # tu mamy generator
+    # return [chr(x) for x in range(ord(start), ord(end), step)]
+for i in alphabet_range('E'):
+    print(i)                        # widok do kolumny
+    list(alphabet_range('E'))       # wyswietli nam liste
+    list(alphabet_range(end="Z", start="A"))        # list od tylu
+
+# INNE
+    def alphabet_range(end="Z", step=1, start="A"):
+        return (chr(x) for x in range(ord(start), ord(end), step))
+for i in alphabet_range('E'):
+    print(i)

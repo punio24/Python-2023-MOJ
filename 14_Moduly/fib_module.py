@@ -1,4 +1,4 @@
-print("Importing " + __name__)
+print("Importing " + __name__)              # __name__ to jest nazwa modulu
 
 my_variable = 7
 

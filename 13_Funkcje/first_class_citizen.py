@@ -3,7 +3,7 @@ def print_log(message):
 
 
 def noop_log(message):
-    pass
+    pass                    ## to nic nie robi, taka przerwa w bloku
 
 
 def get_log(mode):
@@ -21,7 +21,7 @@ log(f'x is now {x}')
 
 env_mode = "prod"
 
-log = get_log(env_mode)
+log = get_log(env_mode)             # tu sie nic nie wyswietli, bo jest zminana na prod, a wslowniku wyzej jest tylko dev
 
 x = 4
 log(f'x is {x}')
