@@ -13,8 +13,8 @@ john.salary
 
 class Employee:
     def __init__(self, name, dept, salary):
-        self.__name = name
-        self.__dept = dept
+        self.__name = name                  # pola z __ sa zastrzezone, hermetyzacja , zamkniecie dostepu elementow klasy, aby ktos z zewnatrz
+        self.__dept = dept                  # nie mogl sie dostac - ale juz wewnatrz klasy tak, np uprawnienia do podgladu wyplat
         self.__salary = salary
 
     def get_salary(self):
