@@ -1,0 +1,95 @@
+maszyna zdalna
+
+user: localadmin
+pass: HbEiMzSzRTd2GF9
+
+IP: 4.231.20.109
+
+
+ZOOM
+Meeting ID: 521 479 8139
+Passcode : 1UaY01
+
+
+Repo ze szkolenia:
+https://github.com/MichalKorzycki/Python-2023
+
+materialy:
+https://www.youtube.com/@BitsofData/streams
+
+https://www.youtube.com/@korzycki/featured
+
+MATERIALY na poczatek:
+https://typer.tiangolo.com/
+repozytorium oprogramowania:
+https://pypi.org/
+
+linki od podstaw:
+sciagawki do pythona:
+https://www.pythoncheatsheet.org/
+ksiazka:
+https://bonito.pl/produkt/automatyzacja-nudnych-zadan-z-pythonem-w2
+https://automatetheboringstuff.com/2e/chapter3/
+
+O jezykach programowania:
+https://www.tiobe.com/tiobe-index/
+
+
+automatyzacja pracy na serwerach:
+https://automatetheboringstuff.com/
+
+----------------------------------------------
+liczba
+1.41e+3 to jest: 1.41 x10 podniesione do potegi 3 = 1410
+.5 to 0.5
+
+dzielenie calkowite to dizelenie bez reszty
+7%2 =1 , bo to jest modulo, czyli calkowita reszta z dzielenia 7//2
+7/2 = 3.5
+7//2 = 3 calkowita liczba
+7%2 = 1 czyli to co nam zostanie z dzielenia 7/2
+----------------------------------------------
+
+a = 2 + 2  # ctr + alt + l korekte na kodzie robi jak brak spacji itd. czyli ladnie formatuje
+
+a = '3' # to bedzie jako tekst i nie mozna zrobic a = 3 + '3'
+ale
+a = int('3') # robi conwersje do liczby
+
+str(a) # robi konwersje zmiennej do tekstu
+
+
+
+listy - nawiasy []
+slowniki - wasy {}
+krotki sa nie zmienne i sa w nawaiasach - ()
+
+----------------------------------------------
+zadanie do 16_Dane_zdalne:
+w pliku countries.py
+
+import requests
+from pprint import pprint
+import sys
+
+if __name__ == '__main__':
+    country = sys.argv[1]
+    print(sys.argv)
+    url = f"https://restcountries.com/v3.1/name/{country}?fullText=true"
+    response = requests.request(method="GET", url=url)
+
+    content = response.json()
+    content = content[0]
+    capital = content['capital'][0]
+    official1 = content['name']
+    official = official1['official']
+    print(official1)
+    population = content['population']
+    area = content['area']
+    print(f'Nazwa  : \t {official}')
+    print(f'Stolica: \t {capital}')
+    print(f'Ludnosc: \t {population}')
+    print(f'Pow.   : \t {area}')
+
+----------------------------------------------
+
