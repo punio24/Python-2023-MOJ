@@ -9,3 +9,6 @@ if __name__ == '__main__':
         print(traceback.format_exc())
     except Exception as e:
         print(e)
+
+# uruchamiac to jako RunStacktrace, juz nie jak alt+shift +E
+
