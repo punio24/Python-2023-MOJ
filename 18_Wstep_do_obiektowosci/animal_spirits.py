@@ -48,7 +48,7 @@ for instrument in orchestra:
 # We don't need no stinkin' IF #
 ################################
 
-# Źle !
+# Źle ! kod napisany moglby byc lepiej
 class Swallow():
     def __init__(self, s_type):
         self.type = s_type

@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod
 class Instrument(ABC):
     @abstractmethod
     def mysound(self):
-        return "!&$%$^%*"
+        return "!&$%$^%*"           # taki dzwiek nie chcemy w instrumentach :)
 
     def play(self):
         print(f"{self.player}@{self.__class__.__name__}: {self.mysound()}")
