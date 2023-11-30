@@ -1,3 +1,5 @@
+# ZADANIE 2
+
 VALUES = ('9', '10', 'J', 'Q', 'K', 'A')
 SUITS = ('clubs', 'diamonds', 'hearts', 'spades')
 
@@ -16,3 +18,6 @@ karta2 = Card('diamonds', 'K')
 
 VALUES.index('A')
 VALUES.index('K')
+
+
+
